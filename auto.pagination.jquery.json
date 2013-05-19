@@ -1,0 +1,35 @@
+{
+	"name": "auto.pagination",
+	"version": "0.1.0",
+	"title": "jQuery Auto Pagination",
+	"author": {
+		"name": "Choy Peng Kong",
+		"email": "pengkong@gmail.com",
+		"url": "http://pengkong.blogspot.com/"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "https://github.com/pengkong/jquery-auto-pagination/blob/master/LICENSE-MIT.txt"
+		},
+		{
+			"type": "GPL",
+			"url": "https://github.com/pengkong/jquery-auto-pagination/blob/master/LICENSE-GPL.txt"
+		}
+	],
+	"dependencies": {
+		"jquery": "1.9.1"
+	},
+	"description": "An unobstrusive auto pagination plugin for JQuery.",
+	"keywords": [
+		"ajax",
+		"pagination",
+		"infinite",
+		"scroll"
+	],
+	"homepage": "http://pengkong.github.io/jquery-auto-pagination",
+	"docs": "http://pengkong.github.io/jquery-auto-pagination/installation.html",
+	"docs": "http://pengkong.github.io/jquery-auto-pagination/demo.html",
+	"download": "https://github.com/pengkong/jquery-auto-pagination",
+	"bugs": "https://github.com/pengkong/jquery-auto-pagination/issues"
+}
