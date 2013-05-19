@@ -1,0 +1,148 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+<title>jQuery Auto Pagination</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="external/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="external/bootstrap/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="external/syntaxhighlighter/styles/shCoreDefault.css"/>
+<script src="external/jquery-1.9.1.min.js"></script>
+<script src="external/syntaxhighlighter/scripts/shCore.js"></script>
+<script src="external/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<style>
+body { font-size:1.1em; }
+div.syntaxhighlighter .container:before,div.syntaxhighlighter .container:after {
+    content:none;
+}
+</style>
+<script>
+SyntaxHighlighter.defaults.toolbar = false;
+SyntaxHighlighter.all();
+</script>
+</head>
+<body>
+<div id="content">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="hero-unit">
+					<h1>jQuery Auto Pagination <small>Verson 0.1.0</small></h1>
+					<p>An unobstrusive auto pagination plugin for JQuery</p>
+					<hr />
+					<ul class="nav nav-pills">
+						<li><a href="index.html">About</a></li>
+						<li><a href="demo.html">Demo</a></li>
+						<li class="active"><a href="installation.html">Installation</a></li>
+					</ul>
+				</div>
+				
+<div class="page-header">
+	<h2>Getting Started</h2>
+</div>
+<h3>Add jQuery and Auto Pagination scripts:</h3>
+<pre class="brush: js;">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="PATH/TO/jquery.auto.pagination.min.js"></script>
+</pre>
+<h3>The html should look similar to:</h3>
+<pre class="brush: js;">
+<div id="content">
+  <div class="panel">...</div>
+  <div class="panel">...</div>
+  <div class="panel">...</div>
+  ...
+  <a href="Link/To/Next/Page" class="nextPage">Next</a>
+</div>
+</pre>
+<h3>Invoke the JavaScript call:</h3>
+<pre class="brush: js;">
+$(function() {
+	$('#content').AutoPagination({
+		nextPageSelector: 'a.nextPage',
+		panelSelector: 'div.panel'
+	});
+});
+</pre>
+<p>The plugin simply calls the <code>nextPageSelector</code> link using Ajax and adds the <code>panelSelector</code> elements to the current page.</p>
+
+<div class="page-header">
+	<h2>Plugin Options</h2>
+</div>
+<p>An object of options can optionally be passed to AutoPagination() to modify the default configuration.</p>
+<pre class="brush: js;">
+$(function() {
+	$('#content').AutoPagination({
+		nextPageBufferPx: 200,
+		nextPageSelector: '.nextPage',
+		panelSelector: '.panel',
+		loaderDivClass: 'ajax-loader',
+		loaderDivStyle: 'text-align:center',
+		loaderImage: 'ajax-loader.gif',
+		loaderText: 'Loading...'
+	});
+});
+</pre>
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<th width="20%">Option</th>
+			<th width="10%">Type</th>
+			<th width="20%">Default</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>nextPageBufferPx</td>
+			<td>Integer</td>
+			<td>200</td>
+			<td>Pixels threshold from <code>nextPageSelector</code> before auto loading occurs. i.e. If user scroll down and passes 200px from <code>nextPageSelector</code>, auto loading is triggered.</td>
+		</tr>
+		<tr>
+			<td>nextPageSelector</td>
+			<td>String</td>
+			<td>.nextPage</td>
+			<td>Selector of next page link. The loading will stop when the link is no longer available on the loaded page.</td>
+		</tr>
+		<tr>
+			<td>panelSelector</td>
+			<td>String</td>
+			<td>.panel</td>
+			<td>Selector of DOM elements to be added to the current page. The elements from the loaded page will be added after the last element on the current page.</td>
+		</tr>
+		<tr>
+			<td>loaderDivClass</td>
+			<td>String</td>
+			<td>ajax-loader</td>
+			<td>Class of loader div. The class name can be used for css styling. e.g. <code>.ajax-loader { background:#000; color:#fff; }</code></td>
+		</tr>
+		<tr>
+			<td>loaderDivStyle</td>
+			<td>String</td>
+			<td>text-align:center</td>
+			<td>Inline CSS style of loader div.</td>
+		</tr>
+		<tr>
+			<td>loaderImage</td>
+			<td>String</td>
+			<td>ajax-loader.gif <img src="img/ajax-loader.gif" alt="Loading..." /></td>
+			<td>Absolute path or relative path from js to the loader image. Note: To style the loader image <code>.ajax-loader img { padding:10px; }</code></td>
+		</tr>
+		<tr>
+			<td>loaderText</td>
+			<td>String</td>
+			<td>Loading...</td>
+			<td>If <code>loaderImage</code> is an empty string the <code>loaderText</code> will be displayed instead.</td>
+		</tr>
+	</tbody>
+</table>
+				
+				<p style="text-align:center; margin:50px 0; padding:20px 0; color:#999; border-top:1px dashed #eee;"><small>- End of Page -</small></p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

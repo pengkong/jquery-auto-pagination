@@ -1,0 +1,65 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="ie"><![endif]-->
+<!--[if gte IE 9]><!--><html><!--<![endif]-->
+<head>
+<title>jQuery Auto Pagination</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="external/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="external/bootstrap/css/bootstrap-responsive.min.css" />
+<script src="external/jquery-1.9.1.min.js"></script>
+<script src="jquery.auto.pagination.min.js"></script>
+<style>
+body { font-size:1.1em; }
+</style>
+</head>
+<body>
+<div id="content">
+	<div class="container">
+		<div class="row">
+			<div class="span12">
+				<div class="hero-unit">
+					<h1>jQuery Auto Pagination <small>Verson 0.1.0</small></h1>
+					<p>An unobstrusive auto pagination plugin for JQuery</p>
+					<hr />
+					<ul class="nav nav-pills">
+						<li><a href="index.html">About</a></li>
+						<li class="active"><a href="demo.html">Demo</a></li>
+						<li><a href="installation.html">Installation</a></li>
+					</ul>
+				</div>
+				<div class="page-header">
+					<h2>Try it! Just keep scrolling down...</h2>
+				</div>
+				<p class="panel"><span class="badge badge-success">1</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in mauris a felis rhoncus aliquam. Suspendisse purus elit, volutpat nec tincidunt id, posuere ut turpis. Sed turpis nisi, lacinia in lacinia sed, luctus et erat. Suspendisse malesuada rutrum nulla, vel suscipit dolor sollicitudin eget. In et augue id justo luctus adipiscing. Pellentesque mauris mi, lacinia sit amet tincidunt in, hendrerit at sem. Ut non turpis quis urna varius dignissim ac sit amet ipsum.</p>
+				<p class="panel"><span class="badge badge-warning">2</span> Pellentesque sollicitudin elementum risus, at interdum metus egestas vel. Duis vitae ipsum turpis. Duis auctor ullamcorper purus, vitae auctor elit sollicitudin sit amet. Vivamus bibendum porttitor felis, vitae bibendum mauris condimentum ac. Proin scelerisque fringilla eleifend. Sed semper laoreet nulla ac ullamcorper. Curabitur aliquam suscipit nisl a tempus. Cras egestas tortor ut sem molestie et laoreet erat varius. Aliquam tincidunt, eros vitae lobortis volutpat, nisl libero cursus diam, at adipiscing nisi nulla ut eros. Quisque vitae elementum quam. Sed gravida semper augue a posuere. Nullam lorem leo, auctor nec lobortis at, vestibulum eget eros.</p>
+				<p class="panel"><span class="badge badge-important">3</span> Nam tellus mauris, iaculis facilisis euismod at, mollis quis nulla. Vivamus a odio est. In risus odio, fermentum eu volutpat sit amet, congue ac dolor. Duis enim lorem, adipiscing id tempor a, molestie ac mi. Curabitur feugiat nulla at ipsum mollis eu eleifend nulla feugiat. Nunc euismod suscipit mi. Pellentesque facilisis faucibus dui sit amet vehicula. Nulla facilisi.</p>
+				<p class="panel"><span class="badge badge-info">4</span> Vivamus ac elementum dui. Praesent luctus justo et est dictum condimentum. Suspendisse volutpat tincidunt egestas. Nunc ut magna velit. Suspendisse ornare nisi sit amet augue dignissim ullamcorper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam vel nisl eu purus volutpat condimentum. Quisque dictum, arcu at faucibus porta, sem quam blandit erat, sed fringilla dolor diam eget elit. Sed eget tellus non arcu porttitor imperdiet. Nulla dolor purus, gravida id vestibulum ac, semper nec tortor.</p>
+				<p class="panel"><span class="badge badge-inverse">5</span> Donec massa sem, commodo et convallis a, egestas ut est. Ut metus arcu, consectetur ut scelerisque id, condimentum malesuada purus. Nulla sed porta tellus. Nullam lacinia, mi at fermentum aliquet, sapien diam cursus leo, a tempus dolor leo at nisl. Maecenas sit amet tempus justo. Sed non neque magna. Pellentesque nisi justo, molestie non facilisis et, bibendum ac eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas molestie molestie mi, ac egestas odio malesuada at. Donec vel odio est. Curabitur fermentum tempor eros, interdum lacinia nisi dictum et.</p>
+				<p class="panel"><span class="badge badge-success">6</span> Nam mauris ipsum, lobortis sed elementum aliquet, lobortis sit amet nisi. Nam congue faucibus purus id volutpat. Donec purus diam, imperdiet sed sodales et, consectetur ut urna. Donec ut rutrum tellus. Cras justo odio, accumsan sit amet tempor vel, tempus ac augue. Pellentesque vitae aliquam neque. Fusce convallis justo at lectus eleifend pulvinar. Donec tristique, lectus non mattis interdum, quam nibh tincidunt ligula, vitae fermentum odio nisl vitae mauris. Etiam volutpat dignissim leo at ultrices. Phasellus nec nibh nisi, sed consequat ipsum. Vestibulum augue odio, molestie semper sagittis quis, aliquet et sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae ligula ante.</p>
+				<p class="panel"><span class="badge badge-warning">7</span> Suspendisse consequat venenatis tempus. Aliquam erat volutpat. Phasellus lectus lacus, mattis vel tristique sit amet, imperdiet quis leo. Duis vitae enim non metus fringilla iaculis sed ac tellus. Donec vel ante vel metus elementum ullamcorper. In eros felis, ullamcorper condimentum viverra sit amet, feugiat quis orci. Vestibulum et lacus libero, et ultrices dui. Praesent massa lacus, bibendum non aliquet sit amet, aliquet in tellus. Nam pretium quam vel ante bibendum interdum. Aenean neque augue, imperdiet a ultricies et, pharetra vulputate magna. Duis semper aliquet euismod.</p>
+				<p class="panel"><span class="badge badge-important">8</span> Curabitur ultricies euismod nisi, eget tempus nulla rutrum ac. Vestibulum ut leo eu sem ultrices tempor id sed nisi. Phasellus eleifend sapien non elit tincidunt suscipit. Nam ipsum purus, luctus et hendrerit sed, aliquam vel dui. Aliquam sit amet est leo, id aliquet lacus. Ut porttitor, neque ut viverra malesuada, metus purus venenatis eros, vel imperdiet dolor nunc id odio. Suspendisse vel velit purus. Etiam scelerisque auctor dolor, vitae volutpat lorem luctus sit amet. Nunc ut pharetra neque. Aliquam pharetra eros non nisi facilisis suscipit. Quisque accumsan semper ullamcorper. In at elit nec quam feugiat tincidunt ac ac enim. Praesent malesuada velit sed odio ornare tempor. Maecenas posuere, dui at imperdiet viverra, sapien ipsum convallis risus, id mattis sem elit a lacus. Nulla venenatis mi vitae mi porta faucibus.</p>
+				<p class="panel"><span class="badge badge-info">9</span> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas orci enim, dapibus in adipiscing ut, imperdiet nec nunc. Quisque in lorem arcu. Proin dolor nulla, viverra at rutrum sed, pharetra vitae diam. Praesent pharetra blandit laoreet. Vestibulum at placerat dolor. Vivamus suscipit tempor libero vel euismod. Aliquam erat volutpat. Donec facilisis varius feugiat. Pellentesque in sollicitudin nulla. Duis sit amet tellus ligula, eu molestie nisl. Morbi eget nisl vitae massa blandit imperdiet nec eget dolor. Mauris quis scelerisque magna. Integer facilisis, mi vitae cursus imperdiet, nunc erat tempor nisi, laoreet elementum felis dui at ligula.</p>
+				<p class="panel"><span class="badge badge-inverse">10</span> Donec nec iaculis nisi. Nullam condimentum libero in orci scelerisque scelerisque. Etiam id justo metus. Donec molestie molestie varius. Etiam imperdiet purus ligula. Curabitur interdum dui sed libero sagittis rutrum. Fusce purus quam, tempus eu aliquet in, facilisis vitae metus. Integer ac arcu nec velit fermentum hendrerit eu sit amet libero. Cras vestibulum pretium mauris id gravida. Fusce lacinia facilisis lorem, a euismod felis tempor ut. Quisque auctor lacinia ipsum, scelerisque cursus tellus auctor sed.</p>
+				<ul class="pager">
+					<li><a href="demo.html" class="nextPage">Next</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+$(function() {
+	$('#content').AutoPagination({
+		nextPageBufferPx: 200,
+		nextPageSelector: 'a.nextPage',
+		panelSelector: 'p.panel',
+		loaderDivClass: 'ajax-loader',
+		loaderDivStyle: 'text-align:center',
+		loaderImage: 'img/ajax-loader.gif',
+		loaderImageAlt: 'Loading...'
+	});
+});
+</script>
+</body>
+</html>
