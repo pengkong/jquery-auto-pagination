@@ -7,8 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" type="text/css" href="external/bootstrap/css/bootstrap.min.css" />
 <link rel="stylesheet" type="text/css" href="external/bootstrap/css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="external/scrollup/css/themes/pill.css" />
 <script src="external/jquery-1.9.1.min.js"></script>
 <script src="jquery.auto.pagination.min.js"></script>
+<script src="external/scrollup/js/jquery.scrollUp.min.js"></script>
 <style>
 body { font-size:1.1em; }
 </style>
@@ -31,6 +33,7 @@ body { font-size:1.1em; }
 				<div class="hero-unit">
 					<h1>jQuery Auto Pagination <small>Verson 0.1.0</small></h1>
 					<p>An unobstrusive auto pagination plugin for JQuery</p>
+					<a href="https://github.com/pengkong/jquery-auto-pagination" class="btn btn-primary btn-large">Download</a>
 					<hr />
 					<ul class="nav nav-pills">
 						<li><a href="index.html">About</a></li>
@@ -69,6 +72,7 @@ $(function() {
 		loaderImage: 'img/ajax-loader.gif',
 		loaderImageAlt: 'Loading...'
 	});
+	$.scrollUp();
 });
 </script>
 </body>
